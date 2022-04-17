@@ -1,12 +1,12 @@
-const { Cursos } = require("../Banco/in-memory-db")
+const{CURSOS} = require("../Banco/BD-cursos")
 
 exports.salvarCursos = (req,res) => {
     const curso = req.body;
-    Cursos.push(curso)
+    CURSOS.push(curso)
     res.status(200).json({message: 'Curso criado com sucesso'})
 }
 
 exports.listarCursos = (req, res) => {
-    console.log("requisicao")
+    console.log("requisicao: Cursos")
     res.status(200).json(Cursos)
 }

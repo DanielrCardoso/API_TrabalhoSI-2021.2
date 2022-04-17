@@ -1,4 +1,4 @@
-exports.Cursos = [
+exports.CURSOS = [
   
     {
         tituloCuso: "Curso 01",
