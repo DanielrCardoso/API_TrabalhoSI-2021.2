@@ -1,5 +1,5 @@
 exports.CURSOS = [
-  
+
     {
         tituloCuso: "Curso 01",
         descricaoCurso: "Breve descricao"

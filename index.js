@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require('cors');
 
-const {listarCursos,salvarCursos} = require('./src/app/Services/curso-service')
+const { listarCursos, salvarCursos } = require('./src/app/Services/curso-service')
 
 app.use(bodyParser.json());
 app.use(cors({ origin: true, credentials: true }));

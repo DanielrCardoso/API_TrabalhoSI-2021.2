@@ -1,7 +1,7 @@
 exports.DUVIDAS = [
-    
+
 ]
 
 exports.RESPOSTAS = [
-    
+
 ]
