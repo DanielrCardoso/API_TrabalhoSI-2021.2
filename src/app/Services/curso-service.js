@@ -1,24 +1,9 @@
 const { Cursos } = require("../Banco/in-memory-db")
 
 exports.salvarCursos = (req,res) => {
-    const curso =  [
-        {
-            tituloCuso: "Curso 01",
-            descricaoCurso: "Breve descricao"
-        },
-        {
-            tituloCuso: "Curso 02",
-            descricaoCurso: "Breve descricao"
-        },
-        {
-            tituloCuso: "Curso 03",
-            descricaoCurso: "Breve descricao"
-        }
-    ]
-
-    for (itemcurso in curso){
-        Cursos.push(itemcurso)
-    }
+    const curso = req.body;
+    Cursos.push(curso)
+    res.status(200).json({message: 'Curso criado com sucesso'})
 }
 
 exports.listarCursos = (req, res) => {
