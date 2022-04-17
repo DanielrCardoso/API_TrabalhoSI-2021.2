@@ -1,4 +1,4 @@
-const { Cursos } = require("./in-memory-db")
+const { Cursos } = require("../Banco/in-memory-db")
 
 exports.salvarCursos = (req,res) => {
     const curso =  [
