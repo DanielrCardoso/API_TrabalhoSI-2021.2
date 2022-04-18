@@ -8,5 +8,5 @@ exports.salvarCursos = (req, res) => {
 
 exports.listarCursos = (req, res) => {
     console.log("requisicao: Cursos")
-    res.status(200).json(Cursos)
+    res.status(200).json(CURSOS)
 }
